@@ -1,0 +1,91 @@
+@import './sass-partials/reset';
+@import './sass-partials/base';
+@import './sass-partials/mixins';
+@import './sass-partials/functions'; 
+
+body{
+    @include flex-container(center,center,column); 
+    .wrapper{
+        width: 100vw;
+        height: 1000vh;
+        background: black;
+       @include flex-container(center,center,column);
+.header{
+    color:#FFED00;
+    background: black;
+    padding: 20px;
+}
+
+    .smily{
+      //  background: 	#FFED00;
+        width: 600px;
+        height:600px;
+        border-radius: 360px;
+        //  @include flex-container(center,center,row);
+        //  flex-wrap: nowrap;
+//    &:hover {
+//    transform: rotate(90deg);
+   &:hover .eye1{
+            transform: rotate(90deg);
+        }
+         .eye{
+            background: black;
+             width:50px;
+             height:80px;
+             position:relative;
+             transform: rotate(-40deg);
+            top:150px;
+            }
+
+         .eye1{
+             left:350px;
+           
+        }
+          
+         .eye2{
+             top:70px;
+            left:200px;
+         }
+         .mouth{
+            background: black;
+             position:relative;
+             top:200px;
+             right:-40px;
+            //  border-radius;
+            width: 500px;
+            height: 10px;
+            border-width:10px;
+            border-style: solid;
+            border-color:  black;
+            border-top-width: 20px;
+            border-bottom-left-radius:50px;
+            border-bottom-right-radius:50px;
+        
+            .mouth1{
+                background:black;
+                width:30px;
+                height:100px;
+                // top:100px;
+                right:40px;
+                border-top-left-radius:50px;
+                 border-bottom-left-radius:50px;
+                 position: relative;
+                 bottom:91px;
+                 left:-9px;
+            }
+              .mouth2{
+                background:black;
+                width:30px;
+                height:100px;
+                 border-top-right-radius:50px;
+                 border-bottom-right-radius:50px;
+                // top:100px;
+                position: relative;
+                left:480px;
+                bottom: 190px;
+            }
+         }  
+         
+        }
+    }
+}
