@@ -2,23 +2,50 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Share</title>
-    <link rel="stylesheet" href="dist/styles.css">
+    <title>Smile and Share</title>
+    <style>
+
+        @keyframes wink {
+            0% {background-image: url("images/Smiley.svg");}
+            10% {background-image: url("images/Smiley.svg");}
+            20% {background-image: url("images/Smiley.svg");}
+            30% {background-image: url("images/Smiley.svg");}
+            40% {background-image: url("images/Smiley.svg");}
+            50% {background-image: url("images/Smiley_2.svg");}
+            55% {background-image: url("images/Smiley_2.svg");}
+            60% {background-image: url("images/Smiley_2.svg");}
+            65% {background-image: url("images/Smiley_2.svg");}
+            70% {background-image: url("images/Smiley_2.svg");}
+            75% {background-image: url("images/Smiley.svg");}
+            80% {background-image: url("images/Smiley.svg");}
+            90% {background-image: url("images/Smiley.svg");}
+            95% {background-image: url("images/Smiley.svg");}
+            100% {background-image: url("images/Smiley.svg");}
+        }
+
+        .winkingsmily {
+            background-repeat: no-repeat;
+            height: 80rem;
+            width: 80rem;
+            animation-name: wink;
+            animation-duration: 1.6s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            animation-direction: alternate
+            
+        }
+        .wrapper{
+            display: flex;
+            justify-content: center;
+        }
+
+    </style>
 </head>
 <body>
     <div class="wrapper">
-            <h1 class="header">Hila Magic</h1>
-        <div class="smily">
-                <!--<div class="eye eye1"></div>
-                <div class="eye eye2"></div>     
-                <div class="mouth">
-                  <div class="mouth1"></div>
-                  <div class="mouth2"></div>
-                  <div class="mouth3"></div>
-                </div>-->
-                <img src="./images/Smiley.svg">
-          </div>
+        <h1 class="header">Smile and Share</h1>
+        <div class="winkingsmily">
+        </div>
     </div>
-    <script src="dist/bundle.js"></script>
 </body>
 </html>
